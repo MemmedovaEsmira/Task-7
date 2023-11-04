@@ -1,0 +1,433 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0px 50px;
+  margin: 0px 50px;
+}
+
+header {
+  background-color: #F0F1F3;
+}
+
+.header_helper {
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: _;
+  gap: _;
+  padding: 1.5rem 0rem;
+}
+.header_helper_logo_title {
+  color: #2A5055;
+}
+.header_helper_nav_menu {
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: _;
+  gap: 3rem;
+}
+.header_helper_nav_menu_item {
+  font-size: 1rem;
+}
+.header_helper_nav_menu_item_link {
+  color: #1F2228;
+}
+.header_helper_buttons {
+  display: flex;
+  flex-wrap: _;
+  justify-content: _;
+  align-items: center;
+  text-align: _;
+  gap: 1.7rem;
+}
+.header_helper_buttons_item {
+  width: 84px;
+  height: 40px;
+  padding: 8px, 16px;
+  border-radius: 8px;
+  background-color: #2A5055;
+  color: white;
+  gap: 12px;
+  cursor: pointer;
+}
+.header_helper_buttons_item:nth-child(2) {
+  border: 1px solid #2A5055;
+  background-color: transparent;
+  color: #2A5055;
+}
+
+.header_menu_icon {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .header_helper_buttons {
+    display: none;
+  }
+  .header_helper_nav {
+    display: none;
+  }
+  .header_menu_icon {
+    display: block;
+    color: black;
+  }
+  .container {
+    margin: 0rem 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+}
+.main_about_section {
+  background-image: url(./task7_img/image1.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  flex-wrap: _;
+  justify-content: center;
+  align-items: center;
+  text-align: _;
+  gap: _;
+  height: 480px;
+}
+.main_about_section_info {
+  max-width: 564px;
+  height: 256px;
+  top: 186px;
+  left: 469px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+.main_about_section_info_text {
+  font-size: 36px;
+  line-height: 52px;
+  color: #F3F4F4;
+  top: 80px;
+}
+.main_about_section_info_button {
+  width: 229px;
+  height: 60px;
+  border-radius: 8px;
+  padding: 12px, 44px;
+  gap: 12px;
+  background: #FA8F45;
+  color: #FFFFFF;
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .main_about_section_info {
+    height: 197px;
+  }
+  .main_about_section_info_button {
+    padding: 8px 20px;
+  }
+}
+.categories {
+  width: 95%;
+  height: 340px;
+  margin-top: 60px;
+}
+.categories_text {
+  font-size: 32px;
+  line-height: 48px;
+  color: #292D35;
+  margin-bottom: 30px;
+}
+.categories_cards {
+  max-width: 80%;
+  height: 268px;
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.categories_cards_info {
+  position: relative;
+  z-index: -1;
+  height: 268px;
+  border-radius: 8px;
+}
+.categories_cards_info_bottom {
+  position: absolute;
+  z-index: 1;
+  width: 246px;
+  height: 24px;
+  bottom: 10px;
+  left: 13.5px;
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 9rem;
+}
+.categories_cards_info_bottom_text {
+  font-size: 16px;
+  line-height: 24x;
+  color: #FFFFFF;
+}
+.categories_cards_info_bottom_img {
+  width: 19.2px;
+  height: 14.4px;
+  top: 4.8px;
+  left: 2.4px;
+  color: #FFFFFF;
+}
+.categories_cards_info_2 {
+  position: relative;
+  z-index: -1;
+  height: 268px;
+  border-radius: 8px;
+}
+.categories_cards_info_2_bottom {
+  position: absolute;
+  z-index: 1;
+  width: 246px;
+  height: 24px;
+  bottom: 10px;
+  left: 21px;
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 11rem;
+}
+.categories_cards_info_2_bottom_text {
+  font-size: 16px;
+  line-height: 24x;
+  color: #FFFFFF;
+}
+.categories_cards_info_2_bottom_img {
+  width: 19.2px;
+  height: 14.4px;
+  top: 4.8px;
+  left: 2.4px;
+  color: #FFFFFF;
+}
+.categories_cards_info_3 {
+  position: relative;
+  z-index: -1;
+  height: 268px;
+  border-radius: 8px;
+}
+.categories_cards_info_3_bottom {
+  position: absolute;
+  z-index: 1;
+  width: 256px;
+  height: 24px;
+  bottom: 10px;
+  left: 21px;
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10rem;
+}
+.categories_cards_info_3_bottom_text {
+  font-size: 16px;
+  line-height: 24x;
+  color: #FFFFFF;
+}
+.categories_cards_info_3_bottom_img {
+  width: 19.2px;
+  height: 14.4px;
+  top: 4.8px;
+  left: 2.4px;
+  color: #FFFFFF;
+}
+.categories_cards_info_4 {
+  position: relative;
+  z-index: -1;
+  height: 268px;
+  border-radius: 8px;
+}
+.categories_cards_info_4_bottom {
+  position: absolute;
+  z-index: 1;
+  width: 253px;
+  height: 24px;
+  bottom: 10px;
+  left: 17.5px;
+  display: flex;
+  flex-wrap: _;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10rem;
+}
+.categories_cards_info_4_bottom_text {
+  font-size: 16px;
+  line-height: 24x;
+  color: #FFFFFF;
+}
+.categories_cards_info_4_bottom_img {
+  width: 19.2px;
+  height: 14.4px;
+  top: 4.8px;
+  left: 2.4px;
+  color: #FFFFFF;
+}
+
+.categories_cards_responsive {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .categories_cards {
+    display: none;
+  }
+  .categories_text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #292D35;
+    text-align: center;
+  }
+  .categories_cards_responsive {
+    display: block;
+    width: 100%;
+    height: 360px;
+    gap: 16px;
+  }
+  .categories_cards_responsive_info {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 78px;
+    gap: 16px;
+  }
+  .categories_cards_responsive_info_img {
+    background-image: url(./responsive-image/education-img.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 78px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .categories_cards_responsive_info_bottom {
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 24px;
+    top: 27px;
+    left: 19px;
+    color: white;
+    display: flex;
+    flex-wrap: _;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 11rem;
+  }
+  .categories_cards_responsive_info_2 {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 78px;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .categories_cards_responsive_info_2_img {
+    background-image: url(./responsive-image/education-img.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 78px;
+    border-radius: 4px;
+  }
+  .categories_cards_responsive_info_2_bottom {
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 24px;
+    top: 27px;
+    left: 19px;
+    color: white;
+    display: flex;
+    flex-wrap: _;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 11rem;
+  }
+  .categories_cards_responsive_info_3 {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 78px;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .categories_cards_responsive_info_3_img {
+    background-image: url(./responsive-image/education-img.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 78px;
+    border-radius: 4px;
+  }
+  .categories_cards_responsive_info_3_bottom {
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 24px;
+    top: 27px;
+    left: 19px;
+    color: white;
+    display: flex;
+    flex-wrap: _;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 11rem;
+  }
+  .categories_cards_responsive_info_4 {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 78px;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .categories_cards_responsive_info_4_img {
+    background-image: url(./responsive-image/education-img.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 78px;
+    border-radius: 4px;
+  }
+  .categories_cards_responsive_info_4_bottom {
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 24px;
+    top: 27px;
+    left: 19px;
+    color: white;
+    display: flex;
+    flex-wrap: _;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 11rem;
+  }
+}/*# sourceMappingURL=main.css.map */
