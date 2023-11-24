@@ -1,0 +1,8 @@
+@mixin d-flex($flex,$wrap,$justify,$align, $t-align,$gap){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $t-align;
+    gap: $gap;
+}
